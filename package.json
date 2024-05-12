@@ -1,0 +1,34 @@
+{
+  "name": "awful-pong",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-mac": "electron-builder -m",
+    "build-win": "electron-builder --win"
+  },
+  "keywords": [],
+  "author": "royflowers99",
+  "license": "ISC",
+  "description": "terrible, awful pong game. My first Electron app.",
+  "devDependencies": {
+    "electron": "^30.0.3",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "dev.royflowers99.awfulpong",
+    "mac": {
+      "category": "public.app-category.games",
+      "icon": "./icons/icon.icns"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "./icons/icon.ico",
+      "artifactName": "${productName}_setup_${version}.${ext}",
+      "publisherName": "royflowers99"
+    }
+  }
+  
+}

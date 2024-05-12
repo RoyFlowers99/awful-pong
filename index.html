@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWFUL PONG</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div id="game-window">
+      <h1 id="pong-title">AWFUL PONG</h1>
+      <h3>PRESS SPACEBAR TO START/PAUSE</h3>
+      <h3 id ="restart-dialogue">PRESS 'R' TO RESET SCORE</h3>
+      <h3 id ="music-dialogue">PRESS 'M' TO STOP/START MUSIC</h3>
+      <h1 id="left-score" class="score">0</h1>
+      <h1 id="right-score" class="score">0</h1>
+      <div id="ball"></div>
+
+      <div id="left-paddle" class="paddles"></div>
+      <div id="center-line"></div>
+      <div id="right-paddle" class="paddles"></div>
+    </div>
+
+    <audio id="backgroundMusic" loop autoplay>
+      <source src="sound/groove.mp3" type="audio/mp3">
+    </audio>    
+    <script src="index.js"></script>
+  </body>
+</html>
