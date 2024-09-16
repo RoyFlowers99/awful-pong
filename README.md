@@ -57,10 +57,6 @@ To start, run `npm start`
 
 ---
 
-## Contact & Contributing
-
-Don't 👍
-
 ## License
 
-Distributed under the ISC License.
+Distributed under the MIT License.
